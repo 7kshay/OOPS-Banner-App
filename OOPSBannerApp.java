@@ -1,26 +1,65 @@
 /**
- * OOPSBannerApp UC2 – Banner Display Application
+ * OOPSBannerApp UC3 – Banner Display using String.join()
  *
- * This class displays the word "OOPS" in a banner format
- * using ASCII art made of asterisks (*) and spaces.
+ * Refactored version of UC2 to improve memory efficiency
+ * by replacing string concatenation with String.join().
  *
- * Each letter is constructed using 7 lines with a width
- * of 9 characters and printed using individual statements.
+ * Maintains the same visual banner output.
  *
  * @author Akshay
- * @version 2.0
+ * @version 3.0
  */
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println("  *****   " + "  *****   " + "  ******  " + "  ******  ");
-        System.out.println(" *     *  " + " *     *  " + " *     *  " + " *        ");
-        System.out.println(" *     *  " + " *     *  " + " *     *  " + " *        ");
-        System.out.println(" *     *  " + " *     *  " + " ******   " + "  *****   ");
-        System.out.println(" *     *  " + " *     *  " + " *        " + "       *  ");
-        System.out.println(" *     *  " + " *     *  " + " *        " + "       *  ");
-        System.out.println("  *****   " + "  *****   " + " *        " + "  ******  ");
+        System.out.println(String.join("",
+                "  *****   ",
+                "  *****   ",
+                " ******   ",
+                "  *****   "
+        ));
 
+        System.out.println(String.join("",
+                " *     *  ",
+                " *     *  ",
+                " *     *  ",
+                " *        "
+        ));
+
+        System.out.println(String.join("",
+                " *     *  ",
+                " *     *  ",
+                " *     *  ",
+                " *        "
+        ));
+
+        System.out.println(String.join("",
+                " *     *  ",
+                " *     *  ",
+                " ******   ",
+                "  *****   "
+        ));
+
+        System.out.println(String.join("",
+                " *     *  ",
+                " *     *  ",
+                " *        ",
+                "       *  "
+        ));
+
+        System.out.println(String.join("",
+                " *     *  ",
+                " *     *  ",
+                " *        ",
+                "       *  "
+        ));
+
+        System.out.println(String.join("",
+                "  *****   ",
+                "  *****   ",
+                " *        ",
+                "  *****   "
+        ));
     }
 }
